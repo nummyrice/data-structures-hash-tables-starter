@@ -1,35 +1,39 @@
+class KeyValuePair {
+    constructor(key, value) {
+        this.key = key;
+        this.value = value;
+    }
+}
+
 class HashTable { // get O(1), set O(1), deleteKey O(1)
 
     constructor(numBuckets = 8) {
-
-    }
-
-    initializeBuckets() {
-
-    }
-
-    numBuckets() {
+        // Initialize your buckets here
 
     }
 
     hash(key) {
+        // Your hash function here. Get creative!
 
     }
 
-    bucket(digest) {
+    hashMod(key) {
+        // Get index after hashing
 
     }
 
-    get(key) {
+    read(key) {
+        // Get a value from key
 
     }
 
-    set(key, value) {
+    insert(key, value) {
+        // Set value using key
 
     }
 
-    resizeStore() {
-
+    resize() {
+        // Resize bucket (occurs when load factor > 0.7)
     }
 
     delete(key) {
