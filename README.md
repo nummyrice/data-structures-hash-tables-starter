@@ -31,7 +31,7 @@ from the reading.
 Some methods will be implemented for you, but they will have bugs. Squash them
 and then finish implementing the rest of the methods!
 
-You will also be code the methods for handling hash collisions and resizing
+You will also code the methods for handling hash collisions and resizing
 your buckets.
 
 Starter code is provided for you in `hash-table/hash-table.js`.
@@ -157,7 +157,7 @@ built with those letters. Solve this in `O(n)` time.
 Example:
 
 ```js
-longestPalindrome("abccccdd");     //  => 7 because the palindrome "dccaccd" 
+longestPalindrome("abccccdd");     //  => 7 because the palindrome "dccaccd"
                                    // can be built.
 ```
 
