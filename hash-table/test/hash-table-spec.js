@@ -79,13 +79,16 @@ describe ('Hash Table', function () {
 
     let capacity = hashTable.capacity;
 
-    // console.log(hashTable.data);
+
     hashTable.resize();
     // console.log(hashTable.capacity);
     // console.log(hashTable.read("key1"));
     // console.log(hashTable.read("key2"));
     // console.log(hashTable.read("key3"));
 
+    // console.log(hashTable.hashMod("key1"));
+    // console.log(hashTable.hashMod("key2"));
+    // console.log(hashTable.hashMod("key3"));
     expect(hashTable.count).to.equal(3);
     expect(hashTable.capacity).to.equal(capacity * 2);
     expect(hashTable.data.length).to.equal(capacity * 2);
@@ -127,16 +130,16 @@ describe ('Hash Table', function () {
 
   // });
 
-  // it('can delete a Key Value Pair', () => {
-  //   hashTable.insert("key1", "value1")
-  //   hashTable.insert("key2", "value2")
-  //   hashTable.insert("key3", "value3")
-  //   hashTable.delete("key2")
+  it('can delete a Key Value Pair', () => {
+    hashTable.insert("key1", "value1")
+    hashTable.insert("key2", "value2")
+    hashTable.insert("key3", "value3")
+    hashTable.delete("key2")
 
-  //   expect(hashTable.read("key1")).to.equal("value1");
-  //   expect(hashTable.read("key3")).to.equal("value3");
+    expect(hashTable.read("key1")).to.equal("value1");
+    expect(hashTable.read("key3")).to.equal("value3");
 
-  //   expect(hashTable.count).to.equal(2);
-  // });
+    expect(hashTable.count).to.equal(2);
+  });
 
 });
